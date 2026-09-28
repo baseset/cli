@@ -1,0 +1,7 @@
+node_modules/
+dist/
+dist-test/
+coverage/
+*.tgz
+AGENTS.md
+PRODUCT.md

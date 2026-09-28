@@ -1,0 +1,28 @@
+{
+  "name": "baseset",
+  "version": "0.0.0",
+  "description": "Local-first discovery of conventions in software repositories",
+  "type": "module",
+  "bin": {
+    "baseset": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tsc -p tsconfig.test.json && node --test dist-test/test/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@vue/compiler-dom": "^3.5.22",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2"
+  },
+  "license": "MIT"
+}
